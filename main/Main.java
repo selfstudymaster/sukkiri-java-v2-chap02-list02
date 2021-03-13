@@ -20,6 +20,7 @@ package main;
 //	}
 //}
 
+
 //list02-02
 //public class Main {
 //	public static void main(String[] args) {
@@ -27,6 +28,7 @@ package main;
 //		System.out.println("私の好きな記号は二重引用符"です");
 //	}
 //}
+
 
 //list02-03
 //public class Main {
@@ -38,6 +40,7 @@ package main;
 //		System.out.println(9 / 2); // 整数同士の除算は商を求めるので注意
 //	}
 //}
+
 
 //list02-04
 //public class Main {
@@ -56,6 +59,7 @@ package main;
 //	}
 //}
 
+
 //list02-05
 //public class Main {
 //	public static void main(String[] args) {
@@ -70,38 +74,42 @@ package main;
 //	}
 //}
 
+
 //list02-06
 //public class Main {
 //	public static void main(String[] args) {
-//		// int型にdouble型(int<double)を代入するとエラーになる
+//		// int型の変数にdouble型(int<double)のリテラルを代入するとエラーになる
 //		// int i = 3.2;
-//		// int型リテラルをbyte型やshort型の変数に対して(byte<short<int)実害がない範囲で単純代入することは例外的に認められている
+//		// int型のリテラルをbyte型やshort型の変数に対して(byte<short<int)実害がない範囲で単純代入することは例外的に認められている
 //		byte b = 3;
 //		System.out.println(b);
 //	}
 //}
 
+
 //list02-07
 //public class Main {
 //	public static void main(String[] args) {
 //		// int型にdouble型(int<double)を代入するとエラーになるが、
-//		// bouble型の値3.2を明示的に強制的な型変換を指示する(キャス演算子)を用いることでJavaに代入を強行させる
+//		// double型のリテラル3.2を明示的に強制的な型変換を指示する(キャス演算子)を用いることでJavaに代入を強行させる
 //		int age = (int) 3.2;
 //		System.out.println(age); // int型として代入したため、表示結果は 3 となる
 //	}
 //}
 
+
 //list02-08
 //public class Main {
 //	public static void main(String[] args) {
-//		// int型の値2をdouble型の2.0に自動変換して計算される
+//		// int型のリテラル2 を、double型の2.0に自動変換して計算される
 //		double d = 8.5 / 2;
-//		//int型5をlong型5Lに自動変換して計算される
+//		//int型のリテラル5 を、long型のリテラル5L に自動変換して計算される
 //		long l = 5 + 2L;
-//		System.out.println(d);
-//		System.out.println(l);
+//		System.out.println(d); // 結果は4.25
+//		System.out.println(l); // 結果は7
 //	}
 //}
+
 
 // list02-09
 //public class Main {
@@ -148,7 +156,7 @@ package main;
 //public class Main {
 //	public static void main(String[] args) {
 //		String age = "31";
-//		// 文字列型 age をint型の整数に型変換してnに代入 Integer.parseInt(変数);
+//		// String型 age をint型の整数に型変換してnに代入 Integer.parseInt(変数);
 //		int n = Integer.parseInt(age);
 //		System.out.println("あなたは来年、" + (n + 1) + "歳になりますね。");
 //	}
@@ -176,6 +184,7 @@ package main;
 //	}
 //}
 
+
 // practice02-01
 //public class Main {
 //	public static void main(String[] args) {
@@ -185,6 +194,7 @@ package main;
 //		System.out.println(ans);
 //	}
 //}
+
 
 // practice02-03
 public class Main {
@@ -202,5 +212,4 @@ public class Main {
 		System.out.println("1:大吉 2:中吉 3:小吉 4:凶");
 	}
 }
-
 
